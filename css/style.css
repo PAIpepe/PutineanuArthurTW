@@ -1,0 +1,149 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #eaeaea;
+    margin-bottom: 30px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#destinatii {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#destinatii h2 {
+    grid-column: 1 / -1; 
+}
+
+#destinatii article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#destinatii article:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+#destinatii article h3 {
+    margin-bottom: 10px;
+    color: #1a252f;
+}
+
+#destinatii article.featured {
+    border: 2px solid #5b3fd9;
+    background-color: #f7f5ff;
+}
+
+#planifica form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#planifica form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#planifica label {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#planifica input,
+#planifica select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #5b3fd9;
+    border-color: #5b3fd9;
+}
+
+#planifica button {
+    padding: 12px;
+    background-color: #5b3fd9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+}
+
+#planifica button:hover {
+    background-color: #482ec4;
+}
+
+#recomandari ul {
+    padding-left: 20px;
+}
+
+#recomandari li {
+    margin-bottom: 10px;
+}
+
+footer {
+    border-top: 1px solid #eaeaea;
+    padding-top: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}

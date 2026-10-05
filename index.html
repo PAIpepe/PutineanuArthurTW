@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <!-- Legătura către fișierul CSS cerut în Exercițiul 2 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. Header cu numele site-ului și nav cu cele 3 legături interne -->
+    <header>
+        <h1>City Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinatii">Destinații</a></li>
+                <li><a href="#planifica">Planifică</a></li>
+                <li><a href="#recomandari">Recomandări</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Secțiunea Destinații (id="destinatii") cu 5 carduri <article> -->
+        <section id="destinatii">
+            <h2>Destinații</h2>
+
+            <!-- Card evidențiat cu clasa "featured" conform Exercițiului 2 -->
+            <article class="featured">
+                <h3>Lisabona</h3>
+                <p><strong>Țară:</strong> Portugalia</p>
+                <p>Orașul celor șapte coline, faimos pentru tramvaiele galbene, arhitectura istorică și muzica Fado.</p>
+                <p><em>Durată recomandată:</em> 4 zile</p>
+            </article>
+
+            <article>
+                <h3>Roma</h3>
+                <p><strong>Țară:</strong> Italia</p>
+                <p>Capitala istoriei antice, oferind atracții legendare precum Colosseumul, Vaticanul și Fontana di Trevi.</p>
+                <p><em>Durată recomandată:</em> 5 zile</p>
+            </article>
+
+            <article>
+                <h3>Praga</h3>
+                <p><strong>Țară:</strong> Cehia</p>
+                <p>Orașul celor o sută de turnuri, renumit pentru Podul Carol și centrul vechi boem.</p>
+                <p><em>Durată recomandată:</em> 3 zile</p>
+            </article>
+
+            <article>
+                <h3>Barcelona</h3>
+                <p><strong>Țară:</strong> Spania</p>
+                <p>Metropolă mediteraneană vibrantă, recunoscută mondial pentru capodoperele lui Antoni Gaudí.</p>
+                <p><em>Durată recomandată:</em> 4 zile</p>
+            </article>
+
+            <article>
+                <h3>Viena</h3>
+                <p><strong>Țară:</strong> Austria</p>
+                <p>Centrul muzicii clasice și al palatelor imperiale, renumit pentru cafenelele tradiționale și muzee.</p>
+                <p><em>Durată recomandată:</em> 3 zile</p>
+            </article>
+        </section>
+
+        <!-- 3. Secțiunea Planifică (id="planifica") cu formularul exact din cerință -->
+        <section id="planifica">
+            <h2>Planifică</h2>
+            <form action="#" method="get">
+                <div>
+                    <label for="name">Nume</label>
+                    <input id="name" name="name" type="text">
+                </div>
+
+                <div>
+                    <label for="destination">Destinație</label>
+                    <select id="destination" name="destination">
+                        <option value="">Alege...</option>
+                        <option value="Lisabona">Lisabona</option>
+                        <option value="Roma">Roma</option>
+                        <option value="Praga">Praga</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Viena">Viena</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="days">Număr de zile</label>
+                    <input id="days" name="days" type="number">
+                </div>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!-- 4. Secțiunea Recomandări (id="recomandari") cu cel puțin 3 sfaturi -->
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+            <ul>
+                <li>Rezervă biletele online pentru atracțiile turistice majore cu cel puțin 2-3 săptămâni înainte.</li>
+                <li>Optează pentru un abonament pe mai multe zile la transportul public local pentru acces facil și reduceri.</li>
+                <li>Păstrează copii digitale ale actelor importante de călătorie într-un spațiu securizat pe cloud.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 5. Footer cu numele autorului și anul -->
+    <footer>
+        <p>&copy; 2026 Iustin. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+</html>
